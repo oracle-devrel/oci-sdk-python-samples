@@ -9,7 +9,7 @@ CLASSIFIERS = [
     "Framework :: Django",
     "Intended Audience :: Developers",
     # Indicate the used license (must match the "license")
-    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "License :: OSI Approved :: The Universal Permissive License (UPL), Version 1.0",
     "Operating System :: OS Independent",
     # Indicate supported versions, Python 2, Python 3 or both.
     "Programming Language :: Python",
@@ -40,7 +40,7 @@ setup(
     maintainer="Leonardo J. Caballero G.",
     maintainer_email="leonardocaballero@gmail.com",
     url="https://github.com/django-ve/django-helloworld",
-    license="GPL",
+    license="upl-1.0",
     platforms="OS Independent",
     install_requires=["Django==2.2.3"],
     packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
