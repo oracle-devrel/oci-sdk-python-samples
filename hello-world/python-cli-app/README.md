@@ -18,6 +18,28 @@ git pull --depth=1 origin main
 cd hello-world/python-cli-app/
 ```
 
+## Installation
+
+You need install the pre-requirements for run this example.
+
+Update repositories of available packages to install, with the following command:
+
+```
+$ sudo apt update
+```
+
+Install necessary minimum dependencies, with the following command:
+
+```
+$ sudo apt install python3-dev python3-pip python3-virtualenv sqlitebrowser
+```
+
+For run this example need to install Django framework execute the follow command:
+
+```
+$ sudo pip install -r requirements.txt
+```
+
 ## Running the Program
 
 ```
