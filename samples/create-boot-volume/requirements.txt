@@ -1,0 +1,2 @@
+# requirements.txt file
+oci>=2.23
