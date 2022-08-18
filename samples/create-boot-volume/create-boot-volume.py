@@ -46,7 +46,7 @@ create_boot_volume_response = core_client.create_boot_volume(
         display_name="NEW-BOOT-VOLUME",
         source_details=oci.core.models.BootVolumeSourceFromBootVolumeDetails(
             type="bootVolume",
-            id="ocid1.bootvolume.oc1.iad.abuwcljsfuccmyusdas46altaqh4up6qkuznnbmaklb5zhcsxepkv3wxhpnq")))
+            id="ocid1.bootvolume.oc1.iad.<MASKED>")))
 
 # Get the data from response
 print(create_boot_volume_response.data)
