@@ -1,21 +1,64 @@
-# oci-sdk-python-samples
+# Create Boot Volume - OCI Python SDK Sample
 
-[![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_oci-sdk-python-samples)](https://sonarcloud.io/dashboard?id=oracle-devrel_oci-sdk-python-samples)
+[![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_oci-sdk-java-samples)](https://sonarcloud.io/dashboard?id=oracle-devrel_oci-sdk-java-samples)
 
 ## Introduction
 Software Development Kits (SDKs) Build and deploy apps that integrate with Oracle Cloud Infrastructure services. Each SDK provides the tools you need to develop an app, including code samples and documentation to create, test, and troubleshoot. In addition, if you want to contribute to the development of the SDKs, they are all open source and available on GitHub.
 
-## Hello World Samples
-* [Simple Python CLI App with OCI SDK](./hello-world/python-cli-app/)
-* [Django Python App with OCI SDK](./hello-world/python-django-app/)
+This project sample code creates new boot volume from existing boot volume
 
-## Other Python Samples
-* [Create Boot Volume](./samples/create-boot-volume/)
+## Cloning this Sample
+```
+git init create-boot-volume
+cd create-boot-volume
+git remote add origin https://github.com/oracle-devrel/oci-sdk-python-samples.git
+git config core.sparsecheckout true
+echo "samples/create-boot-volume/*">>.git/info/sparse-checkout
+git pull --depth=1 origin main
+cd samples/create-boot-volume
+```
+
+## Installation
+
+You need install the pre-requirements for run this example.
+
+Update repositories of available packages to install, with the following command:
+
+```
+$ sudo apt update
+```
+
+Install necessary minimum dependencies, with the following command:
+
+```
+$ sudo apt install python3-dev python3-pip python3-virtualenv sqlitebrowser
+```
+
+For run this example need to install Django framework execute the follow command:
+
+```
+$ sudo pip install -r requirements.txt
+```
+
+## Running the Program
+
+Before running the program, update `ocid1.bootvolume.oc1.iad.<MASKED>` with your actual existing bootvolume to copy from.
+
+```
+python3 create-boot-volume.py
+```
+This will print all the instances from the root tenancy in `US-ASHBURN-1` region. The tenancy info is retrieved from OCI config.
 
 ## References
 * [Blog - Getting started with OCI Python SDK](https://blogs.oracle.com/linux/post/getting-started-with-the-oracle-cloud-infrastructure-python-sdk)
+* [OCI Python SDK Doc - Create Boot Volume](https://docs.oracle.com/en-us/iaas/tools/python/2.79.0/api/core/models/oci.core.models.CreateBootVolumeDetails.html)
 * [OCI SDK - Official Documentation](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
 * [OCI Python SDK - Open Source GitHub Repository](https://github.com/oracle/oci-python-sdk)
+
+## Contributors
+* Author: Ashok Raja CM
+* Collaborators: NA
+* Last Review: Aug 2022
 
 ## Contributing
 This project is open source.  Please submit your contributions by forking this repository and submitting a pull request!  Oracle appreciates any contributions that are made by the open source community.
