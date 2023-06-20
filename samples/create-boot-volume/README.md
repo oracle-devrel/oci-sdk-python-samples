@@ -8,6 +8,12 @@ Software Development Kits (SDKs) Build and deploy apps that integrate with Oracl
 This project sample code creates new boot volume from existing boot volume
 
 ## Cloning this Sample
+If you have your OCI tenancy and want to try out this sample, click on 'Open in Code Editor' button below to clone this repository in your cloud shell workspace.
+
+[<img src="https://raw.githubusercontent.com/oracle-devrel/oci-code-editor-samples/main/images/open-in-code-editor.png" />](https://cloud.oracle.com/?region=home&cs_repo_url=https://github.com/oracle-devrel/oci-sdk-python-samples.git&cs_open_ce=true&cs_readme_path=samples/create-boot-volume/README.md)
+
+or
+
 ```
 git init create-boot-volume
 cd create-boot-volume
